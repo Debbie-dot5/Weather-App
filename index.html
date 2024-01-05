@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+ 
+    
+
+<div class="main-container">
+
+    <div class="overlay">
+
+    
+    <div class="input-container">
+        <input type="text" class="input-city" placeholder="Enter city">
+     
+         <button class="search-btn"> <img src="images/search.png"></button> 
+    </div>
+
+    <div class="error-msg">
+        <p>Uh oh! &#128565 Seems like you entered a wrong city name</p>
+    </div> 
+    
+    <div class="weather-content-info">
+        <div class="city-location">
+            <div class="size-location">
+                <h3 class="city-name">Ilorin-West</h3>
+               <span> <i style='font-size:20px' class='fas'>&#xf3c5;</i> </span>
+            </div>
+    
+    
+            <div class="temperature-container">
+                <div class="temp-unit">
+                     <h1 class="temperature">26°C</h1>
+                     <p class="pressure">Feels like 34°</p>
+                </div>
+                
+                <div class="weather-container">
+                   
+               <img src="images/sunny.png" class="weather-icon" >
+                <p class="weather">Cloudy</p>
+                    </div>
+            </div>  
+        </div>
+        
+    <div class="details">
+        <div class="col">
+            <img src="images/humidity.png">
+            <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+            </div>
+        </div>
+    
+        <div class="col">
+            <img src="images/wind.png">
+            <div>
+                <p class="wind">15km/h </p>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+   
+    </div> 
+</div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>

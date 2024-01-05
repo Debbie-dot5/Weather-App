@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    color: white;  
+    
+}
+
+
+.main-container{
+    background-image: url(images/cloudy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+       
+}     
+
+.overlay{
+ background-color: rgba(0, 0, 0, 0.3);
+ height: 100vh;
+ 
+}
+
+.input-container{
+     width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.input-container input{
+    height: 35px;
+    padding: 10px 20px; 
+    width: 250px;
+    border: none;
+   outline: none;
+   font-size: 14px;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   
+}
+
+
+
+.input-container .search-btn{
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px; 
+    cursor: pointer;  
+
+}
+
+button img{
+    width: 16px;
+   
+}
+
+.size-location{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 18px;
+
+}
+
+
+
+span{
+    padding-left: 10px;
+}
+
+.time-zone{
+    padding-left: 10px;
+}
+
+.temperature-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+.temperature{
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.pressure{
+  padding-top: 8px;
+}
+
+.temp-unit{
+   align-items: center;
+
+
+}
+
+.weather-container .weather{
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 80px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 18px;
+    margin-top: -6px;
+}
+
+.error-msg{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    padding-top: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+    display: none;
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+   
+    body{
+        background: white;
+    }
+  
+    .main-container{
+        width: 400px;
+        margin: 40px auto;
+       box-shadow: 0 0 18px rgb(0, 0, 0, 0.8);
+       border-radius: 18px;
+       background-image: url('cloud.jpg');
+       background-size: cover;
+       background-position: center; 
+       height: 65vh;
+       
+    }
+
+    .overlay{
+        border-radius: 18px;
+        height: 65vh; 
+    }
+
+    .input-container{
+        padding: 20px 25px 0 25px;
+    }
+    
+  
+    .input-container input{
+        width: 100%;
+        
+        
+    }
+  
+
+}
